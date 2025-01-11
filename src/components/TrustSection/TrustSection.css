@@ -1,0 +1,57 @@
+.trust-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px dashed #007bff;
+  }
+  
+  .trust-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .trust-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .icon {
+    width: 30px;
+    height: auto;
+  }
+  
+  .trust-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .trust-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 600px) {
+    .trust-header h2 {
+      font-size: 20px;
+    }
+  
+    .trust-item p {
+      font-size: 14px;
+    }
+  }

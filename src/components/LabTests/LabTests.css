@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .tests-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tests-header h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .view-more {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .tab.active {
+    border-color: #007bff;
+    background-color: #e7f0ff;
+  }
+  
+  .test-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .test-info h3 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  .test-info p {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .test-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .discount {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .final-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-button {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .add-button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .cashless-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 600px) {
+    .tests-header h2 {
+      font-size: 18px;
+    }
+  
+    .view-more {
+      font-size: 12px;
+    }
+  
+    .tab {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  
+    .test-info h3 {
+      font-size: 14px;
+    }
+  
+    .test-info p {
+      font-size: 10px;
+    }
+  
+    .final-price {
+      font-size: 14px;
+    }
+  
+    .add-button {
+      padding: 3px 10px;
+      font-size: 10px;
+    }
+  }

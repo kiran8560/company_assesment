@@ -1,0 +1,189 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    background-color: #E8F2FE; /* Background color for the main container */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #E8F2FE;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    background-color: #E8F2FE;
+  }
+  
+  .view-all {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .package-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .package-slider {
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background: #ffffff; /* Background color for each card */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    min-width: 280px;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-header h3 {
+    font-size: 18px;
+  }
+  
+  .sponsored {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .card-body {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .report-time {
+    font-size: 12px;
+    color: #007bff;
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove padding if unnecessary */
+    text-align: left; /* Ensure left alignment */
+  }
+  
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .details ul {
+    list-style-type: disc;
+    padding-left: 15px; /* Adjust padding if needed */
+  }
+  .availability {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity button {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .header h2 {
+      font-size: 20px;
+      background-color: #E8F2FE;
+    }
+  
+    .card {
+      width: auto;
+      min-width: 250px;
+      padding: 15px;
+    }
+    .report-time {
+      font-size: 12px;
+      color: #007bff;
+      margin: 0; /* Remove all margins */
+      padding: 0; /* Remove padding if unnecessary */
+      text-align: left; /* Ensure left alignment */
+    }
+    
+  
+    .card-header h3 {
+      font-size: 16px;
+      background-color: #E8F2FE;
+    }
+  
+    .card-body {
+      font-size: 12px;
+    }
+    .price {
+      font-size: 16px;
+    }
+  
+    .details ul {
+      margin-left: 0; /* Reduce margin for mobile */
+      padding-left: 10px; /* Adjust padding for better alignment */
+    }
+    .details p {
+        font-size: 10px; /* Adjust the font size for mobile */
+      }
+  }

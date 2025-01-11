@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .safety-section {
+    text-align: center;
+  }
+  
+  .safety-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .safety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .safety-card {
+    background-color: #e7f0ff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .safety-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .safety-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .safety-card p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 600px) {
+    .safety-section h2 {
+      font-size: 20px;
+    }
+  
+    .safety-card p {
+      font-size: 12px;
+    }
+  
+    .safety-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two containers per row on mobile */
+    }
+  }
