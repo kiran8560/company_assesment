@@ -110,6 +110,7 @@ npm start
 ```
 
 This will start your React app, and it should display the fetched API data in the UI.
+Any queries contact me via Mail  (anagajalakiran8560@gmail.com)
 
 ---
 
